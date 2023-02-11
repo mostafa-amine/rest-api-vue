@@ -11,7 +11,7 @@ class SkillController extends Controller
 {
     public function index()
     {
-        return SkillResource::collection(Skill::paginate(1));
+        return SkillResource::collection(Skill::all());
     }
 
     public function store(StoreSkillRequest $request)
